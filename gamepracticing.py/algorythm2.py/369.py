@@ -7,8 +7,8 @@ for i in range(secretLen):
 print(secret)
 for  chance in range(10,0,-1):
     while True:
-        guess=input(("you have %d chane(s)"%chance)+"guess my three digit-num")
-
+        guess=input(("you have %d chance(s)"%chance)+"guess my three digit-num")
+        #문자 괄호 주의 
         if len(guess)==secretLen and guess.isdigit():
             break
         print(guess)
@@ -30,4 +30,10 @@ for  chance in range(10,0,-1):
                 print("%d strikes and %d balls\n"%(strike,ball))
             else:
                 print("%d strikes\n"%strike)
+        else:
+            if ball>0:
+                print("%d balls"%ball)
+            else:
+                print("out\n")
+                print("you failed \n")
             

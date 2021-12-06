@@ -1,8 +1,10 @@
+#그냥 순서대로가 아니라 학번처럼 고유 번호가 
+#배정되어있는 경우
 def find_name(num,nolist,namelist):
     lens=len(nolist)
     result="?"
     for i in range(lens):
-        if nolist[i]:
+        if nolist[i]==num:
             result=namelist[i]
     return result
 

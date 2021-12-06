@@ -14,7 +14,7 @@
     font-weight: bold;
 }
 .intro_bg{
-    background-image:url("dawn.jpg");
+    background-image:url("people-3120717.jpg");
     width:100%;
     height:718px;
 
@@ -25,28 +25,9 @@
     width:1280px;
     margin:auto;
 }
-.searcharea{
-    width:300px;
-    height:40px;
-    background:rgba(0,0,0,5);
-    border-radius:5px;
-    margin-top:24px;
-}
-.searcharea>form>input{
-    border:none;
-    width:250px;
-    height:40px;
-    background:rgb(70, 65, 65);
-    color:#fff;
-    padding-left:10px;
 
-}
-.searcharea>form>span{
-    width:50px;
-    color:#fff;
-    font-weight:bold;
-    cursor:pointer;
-}
+
+
 .nav{
     display:flex;
     justify-content:flex-end;
@@ -62,6 +43,41 @@
     color:#fff;
 }
 
+.nav2{
+    
+    width:1000px;
+    color:#fff;
+    flex:1;
+	height:302px;
+    margin-left:950px;
+    background-color: white;
+
+}
+
+.nav2>li{
+   
+    color:#000;
+    font-size: 20px;
+
+}
+.nav2>li>a{
+    
+    color:rgb(214, 191, 191);
+    font-size: 20px;
+}
+.icons4{
+    margin-top:8px;
+}
+.icons4>img{
+    
+    width:1000px; 
+    height:541px;
+    float:right;
+    margin-top: 89px;
+}
+
+
+
 .intro_text{
     width:100%;
     margin:231px auto 231px auto;
@@ -71,11 +87,26 @@
 }
 .intro_text>h1{
     font-size: 48px;
+    color:rgb(194, 88, 88);
 }
-.intro_text>h1,
+
 .intro_text>h4{
 
     color:#fff;
+}
+.dontext h1{
+    font-size:100px;
+    color: white;
+}
+.dontext{
+    width:100%;
+    margin:600px auto 231px auto;
+    
+    text-align: center;
+
+}
+.dontext h3{
+    color:rgb(161, 123, 123);
 }
 
 .amount{
@@ -96,7 +127,9 @@
     text-align:center;
 
     margin-top:37px;
-  
+    font-size: 20px;
+
+    font-weight:bold;
     height: 57 px;
 }
 .amount>li>div:not(:not-last-child)>div{
@@ -114,7 +147,7 @@
 /* main_text 0*/
 .main_text0{
     width:100%;
-    height:900px;
+    height:690px;
     margin-top:-132px;
     
     background:rgb(92, 83, 83);
@@ -133,7 +166,7 @@
 .icons{
 
     display:flex;
-    width:600px;
+    width:1000px;
     height:302px;
     
     margin:auto;
@@ -145,6 +178,7 @@
     margin-top:49px;
     height:302px;
     text-align: center;
+    border-radius:20px;
 }
 
 .icons>li:not(:last-child){
@@ -157,14 +191,16 @@
     width:600px;
     height:302px;
     
-    margin:auto;
+    text-align: 400px;
 
 }
-.icons2>li{
+.icons2>img{
     flex:1;
     background:white;
-    margin-top:49px;
-    height:302px;
+    margin-top:200px;
+    height:502px;
+    width:700;
+    border-radius:5px;
 }
 
 .icons2>li:not(:last-child){
@@ -174,13 +210,71 @@
 .icons>li>.icon_img{
     margin-top:36px;
     margin-left: 36px;
+    width:100%;
 }
 
-.icons .contents1 {
+.icons> .contents1 {
     width:10px;
     
 }
 
 .second{
     margin-top:20px;
+}
+
+.bg2>.footer>.dona>img{
+    flex:1;
+    background:white;
+    margin-top:85px;
+    height:600px;
+    width:800px;
+    border-radius:5px;
+   
+    margin-right:-400px;
+}
+.footer{
+   
+    display:flex;
+    width:1280px;
+}
+
+.bg2{
+    background-color: black;
+    height:800px;
+    width:100%;
+    
+}
+.donaexp h3{
+    flex:1;
+}
+
+.dona>img{
+    width:390px;
+    height:400px;
+    
+   
+    flex:left;
+            
+}
+#im3{
+    margin-top:400px;
+}
+#im3 p{
+    text-align: center;
+    margin-left: -400px;
+    width: 500px;
+    font-size: 20px;
+}
+#im1{
+    margin-top: 200px;
+}
+#im1 p{
+    text-align: center;
+    margin-left: 500px;
+    width: 500px;
+    font-size: 20px;
+}
+#im1 p a{
+    font-weight:bold;
+    font-size: 30px;
 }

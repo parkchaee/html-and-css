@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    </head>
+    <body>
+        <style>
+            .blogtag{
+                background-color: yellowgreen;
+            }
+            .blogtag>div{
+                background-color: tomato;
+                border:1px solid black;
+            }
+            .inlinetag span{
+                background:skyblue;
+                border:1px solid black;
+            }
+            .li{
+                list-style:none;
+            }
+            .colorbtn{
+                width:100px;
+                height: 36px;
+                background-color: green;
+                color:white;
+                line-height:36px; /*버튼 자체 높이 */
+                cursor:pointer;
+                border-radius:3px;
+                /* color은 글자색 배경 색은 background-color*/
+
+            }
+            div{
+                background:pink;
+                padding:10px;
+                /*div 자체의 패딩을 맞춰줌: 일정해짐*/
+                margin-top:100px; /*위에서 div 자체를 떨어뜨려줌*/
+
+            }
+            div>span:first-child{ /*첫번째 자식요소만 , div안에 span이 있는 개념이므로*/
+                background-color: red;
+                padding-top:20px; /*위로만 부풀리기*/
+                padding-left:40px;
+
+
+            }
+            
+            div>span{
+                background:greenyellow;
+                padding:10px;
+                /* 패딩은 글자 주위를 부풀림, 마진은 거리를 띄움 */
+                margin:40px;
+
+            }
+            table{
+                border-bottom:1px solid black;
+                /*표의 아래에 선이 생김*/
+                /* border:1px; solid black; */
+                border-collapse:collapse;
+                /* 표 속 선들의 간격을 없애줌 */
+                margin:0px;
+                padding:0px;
+                text-decoration: none;
+                color:black;
+                list-style:none;
+                /* 간격이 기본으로 설정되어있는 걸 없애줌 */
+            }
+            table>thead>tr>th{
+                border:1px solid gray;
+            
+            }
+            /*table>th 도 가능, table 안의 모든 th에 대해*/
+            table>tbody>tr>td{
+                border:1px solid gray;
+                background:pink;
+            }
+            .blankposition{
+                width:100%;
+                background:gray;
+                height:400px;
+            }
+            .relativeposition{
+                width:100%;
+                background:pink;
+                height:200px;
+                margin-top:20px;
+                
+            }
+            .relativeposition>div:first-child{
+                position:relative;
+                top:-100px;
+            }
+            
+            .absoluteposition{
+                width:100%;
+            }
+            .absoluteposition>div:first-child{
+                position:absolute;
+                right:0px;
+                top:0px;
+                width:100px;
+                height:400px;
+                background-color: blue;
+                /*html문서를 기준으로 가장 우측, 하단으로 붙음*/
+            }
+            .fixedposition{
+                width:100%;
+            }
+            .fixedposition>div{
+                position:fixed;
+                /*기존에 고정되어있고 브라우저를 움직일때 따라다님*/
+                top:0px;
+                left:0px;
+                background:royalblue;
+                width:100p;
+                height:100px;
+            }
+            div>span{
+                display:block; 
+                /*inline태그인 span의 상태를 block로 , 
+                세로로 나열*/
+                border:1px solid white;
+            
+                background:pink;
+            }
+            .flexable{
+                display: flex; /*inline 요소처럼 보이게 함*/
+            }
+            div>div:first-child{
+                flex:2; /*div 첫번째가 2자리 먼저 차지 4등분 중*/
+            }
+            div>div{
+                display:inline;
+                background-color: orange;
+                border:1px solid white;
+                flex:1px;
+            }
+
+        </style>
+        <h1>제목</h1>
+        <h2>제목2</h2>
+        <ul>
+            <li>순서 없는 리스트</li>
+        </ul>
+        <div class="blocktag">
+            <div>block1</div>
+            <div>세로로 나열</div>
+            <div>3</div>
+        </div>
+        <div class="inlinetag">
+            <span>inline 1 은 가로로 붙음</span>
+        </div>
+        <form>
+            <ul>
+                <li><input type="text"></li>
+                <li><input type="password"></li>
+                <li>
+                    <label><input type="radio" name="fruit" id="orange">오렌지</label>
+                    <label><input type="radio" name="fruit" id="orange">오렌지</label>
+                </li>
+                <li>
+                    <label><input checkbox="radio" name="fruit" id="orange">오렌지</label>
+                    <label><input checkbox="radio" name="fruit" id="orange">오렌지</label>
+                </li>
+                <li>
+                    <div class="colorbtn">버튼입니다</div>
+                    <!-- 버튼은 그냥 쓰면 브라우저 별로 디자인이 dif -->
+                </li>
+                <a href="https://www.naver.com">네이버 바로가기</a>
+
+                
+                
+            </ul>
+            <input type="submit">
+        </form>
+        <div>
+            <span>span은 </span>
+            <span>글자수까지만 자리 차지</span>
+        </div>
+        <table>
+            <thread>
+                <tr>
+                    <th>이름</th>
+                    <th>성별</th>
+                    <th>나이</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>김씨</td>
+                    <td>여성</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>김씨</td>
+                    <td>여성</td>
+                    <td>20</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="blankposition">
+            <div>blank</div>
+        </div>
+        </table>
+        <div class="relativeposition">
+            <div>blank</div>
+        </div>
+        </table>
+        <div class="absoluteposition">
+            <div>blank</div>
+        </div>
+        </table>
+        <div class="fixedposition">
+            <div>blank</div>
+        </div>
+        <div class="flexable">
+            <div>
+                <span>span</span>
+                <span>span</span>
+            </div>
+            <div>
+                <div>
+                    div
+                </div>
+                <div>
+                    div
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

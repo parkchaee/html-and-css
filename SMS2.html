@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>SMS-sangmyung smile medical service</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Shippori+Antique+B1&display=swap');
+        *{
+                
+            list-style:none;
+        }    
+
+
+
+
+        #header {
+            background-color: #D9D9D9;
+            width: 96%;
+            height: 100px;
+            padding-top: 5px;
+            padding-left: 80px;
+            letter-spacing: 3px;
+            font-size: 20px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+
+
+        #content {
+            width: 101%;
+            background-color: #F2F2F2;
+            height: 730px;
+            box-sizing: border-box;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+
+
+        #footer {
+            background-color: #404040;
+            width: 101%;
+            height: 30px;
+            clear: both;
+            font-family: 'Shippori Antique B1', sans-serif;
+            text-align: center;
+            padding: 14px 0px;
+        }
+
+
+
+        sub {
+            font-size: 20px;
+        }
+
+        sup {
+            font-size: 15px;
+        }
+
+
+
+        #wrapper {
+            margin: 0 auto;
+        }
+
+
+
+
+
+        .icons {
+            display: flex;
+            width: 800px;
+            height: 230px;
+            margin: auto;
+        }
+
+        .icons > li {
+            flex: 1;
+            background-color: lightgrey;
+            margin-top: 35px;
+            height: 230px;
+            
+        }
+
+        .icons > li:not(:last-child) {
+            margin-right: 1%;
+        }
+
+        .icons2 {
+            display: flex;
+            width: 800px;
+            height: 210px;
+            margin: auto;
+            margin-top:10px;
+        }
+
+        .icons2 > li {
+            flex: 1;
+            background-color: darkgray;
+            margin-top: 35px;
+            height: 210px;
+            }
+
+        .icons2 > li:not(:last-child) {
+                margin-right: 1%;
+            }
+
+        .innerdetail {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            font-size: 30px;
+            font-family: 'Noto Sans KR', sans-serif;
+            color: white;
+        }
+
+
+
+            .innerdetail:hover {
+                text-decoration: underline;
+            }
+
+
+
+            .innerdetail a {
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+
+        .소개 {
+            text-align: center;
+            padding-top: 13px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="header">
+
+            <h1>SMS <sub>Sangmyung Smart Medical Service</sub></h1>
+
+        </div>
+
+        <div id="content">
+
+
+
+            <div class="소개">
+
+                <h2>저희 <strong>SMS</strong>는 보다 더 가깝고, <br />보다 더 편리한 의료 서비스를 제공합니다.</h2>
+
+            </div>
+        
+
+            <ul class="icons">
+
+
+
+                <li> <div class="innerdetail">
+
+                    <a href="http://www.snuh.org/main.do">진료 <br /><sup>원격진료를 제공합니다.</sup></a></div>
+
+                </li>
+
+
+
+                <li> <div class="innerdetail">
+
+                    <a href="http://child.snuh.org/main.do">처방<br /><sup>원하는 장소로 약을 배달해드립니다.</sup></a></div>
+                </li>
+
+
+
+            </ul>
+
+
+
+            <ul class="icons2">
+
+                <li><div class="innerdetail"><a href="http://cancer.snuh.org/main.do">건강정보<br /><sup>나의 유전정보는?</sup></a></div></li>
+
+                <li><div class="innerdetail"><a href="https://www.snubh.org/index.do">커뮤니티<br /><sup>사람들과 정보를 공유하세요.</sup></a></div></li>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+        <div id="footer">Copyright (c) 2021 SMS</div>
+
+    </div>
+
+</body>
+
+</html>
